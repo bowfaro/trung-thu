@@ -79,7 +79,7 @@ export function BeforeAfterSlider() {
         {/* Traditional (full background) */}
         <div style={{ position: 'absolute', inset: 0 }}>
           <Image
-            src="/images/traditional-lantern.jpg"
+            src="/images/before-img.jpg"
             alt="Đèn truyền thống"
             fill
             style={{ objectFit: 'cover' }}
@@ -104,7 +104,7 @@ export function BeforeAfterSlider() {
           }}
         >
           <Image
-            src="/images/modern-lantern.jpg"
+            src="/images/after-img.jpg"
             alt="Đèn hiện đại"
             fill
             style={{ objectFit: 'cover' }}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import "tailwindcss";
 
 /* ── Trung Thu Design Tokens ─────────────────────────────── */
@@ -33,8 +33,8 @@
   --overlay-warm: rgba(245, 166, 35, 0.15);
 
   /* Typography */
-  --font-heading: 'Playfair Display', 'Georgia', serif;
-  --font-body: 'Be Vietnam Pro', 'Segoe UI', sans-serif;
+  --font-heading: 'Roboto', sans-serif;
+  --font-body: 'Roboto', sans-serif;
 
   /* Spacing & sizing */
   --slide-transition: 600ms;
@@ -53,42 +53,60 @@
 }
 
 html {
-  overflow: hidden;
-  height: 100%;
-  scroll-behavior: auto;
+  font-size: 20px;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  height: 100%;
   width: 100%;
   font-family: var(--font-body);
   color: var(--text-dark);
   background: var(--night-deep);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* ── Typography ──────────────────────────────────────────── */
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
   line-height: 1.2;
+  margin: 0;
 }
 
-/* ── Slide Base ──────────────────────────────────────────── */
-.slide {
-  position: absolute;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  height: 100dvh;
+p { margin: 0; }
+
+/* ── Section Base ────────────────────────────────────────── */
+.section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 80px 24px;
   overflow: hidden;
+}
+
+.section-cover {
+  min-height: 100vh;
+  min-height: 100dvh;
+  justify-content: center;
+  padding: 0;
+}
+
+/* ── Scroll Animations ───────────────────────────────────── */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ── Glow Effects ────────────────────────────────────────── */
@@ -226,9 +244,16 @@ h1, h2, h3, h4 {
   transform: translateY(0);
 }
 
-/* ── Scrollbar Hide ──────────────────────────────────────── */
-::-webkit-scrollbar { display: none; }
-* { -ms-overflow-style: none; scrollbar-width: none; }
+/* ── Custom Scrollbar ─────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--night-deep); }
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 166, 35, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 166, 35, 0.5);
+}
 
 /* ── Selection ───────────────────────────────────────────── */
 ::selection {

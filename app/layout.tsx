@@ -2,19 +2,20 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Trung Thu — Hai Ánh Đèn, Một Mùa Trăng",
+  title: "Muôn Ánh Đèn, Cùng Thắp Một Mùa Trăng",
   description:
-    "Câu chuyện tương tác về đèn lồng Trung Thu: đèn truyền thống mang ánh sáng của ký ức, đèn hiện đại mang ánh sáng của đổi mới — hai ánh sáng giao thoa cùng thắp sáng một mùa trăng.",
+    "Đèn truyền thống có ánh sáng của ký ức, đèn hiện đại có ánh sáng của đổi mới — cả hai ánh sáng giao thoa cùng thắp sáng mùa Trung thu.",
   keywords: [
     "Trung Thu",
     "đèn lồng",
     "Mid-Autumn Festival",
     "đèn ông sao",
     "Tết Trung Thu",
-    "interactive",
+    "lồng đèn truyền thống",
+    "lồng đèn hiện đại",
   ],
   openGraph: {
-    title: "Trung Thu — Hai Ánh Đèn, Một Mùa Trăng",
+    title: "Muôn Ánh Đèn, Cùng Thắp Một Mùa Trăng",
     description:
       "Trải nghiệm tương tác về câu chuyện đèn lồng Trung Thu — giữa truyền thống và hiện đại.",
     type: "website",
@@ -24,19 +25,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="vi" className="h-full antialiased">
-      <body
-        style={{
-          margin: 0,
-          padding: 0,
-          overflow: "hidden",
-          height: "100%",
-          width: "100%",
-          minHeight: "100vh",
-        }}
-      >
-        {children}
-      </body>
+    <html lang="vi" className="antialiased">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
