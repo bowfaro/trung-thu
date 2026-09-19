@@ -333,3 +333,41 @@ p {
   background: var(--lantern-gold);
   color: var(--text-dark);
 }
+
+/* ── Mobile Responsive Rules ─────────────────────────────── */
+@media (max-width: 860px) {
+  html {
+    font-size: 16px;
+  }
+
+  #scroll-nav,
+  .desktop-scroll-nav {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+  }
+
+  .section {
+    padding: 60px 16px !important;
+  }
+
+  .section-cover {
+    padding: 0 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 48px 12px !important;
+  }
+
+  .btn-lantern {
+    padding: 12px 28px !important;
+    font-size: 1.05rem !important;
+  }
+}

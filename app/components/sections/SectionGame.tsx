@@ -158,8 +158,8 @@ export function SectionGame() {
         style={{
           zIndex: 2,
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-          gap: '28px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 290px), 1fr))',
+          gap: '24px',
           width: '100%',
           maxWidth: '1080px',
           alignItems: 'start',
@@ -180,7 +180,7 @@ export function SectionGame() {
             style={{
               width: '100%',
               maxWidth: '460px',
-              height: '440px',
+              height: 'clamp(360px, 46vh, 440px)',
               borderRadius: '24px',
               position: 'relative',
               overflow: 'hidden',

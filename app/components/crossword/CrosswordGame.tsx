@@ -459,8 +459,8 @@ export function CrosswordGame() {
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-          gap: '24px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 290px), 1fr))',
+          gap: '20px',
           alignItems: 'stretch',
           width: '100%',
         }}
@@ -1058,13 +1058,17 @@ export function CrosswordGame() {
             transition={{ type: 'spring', stiffness: 180, damping: 18 }}
             style={{
               textAlign: 'center',
-              padding: '32px 24px',
+              padding: 'clamp(20px, 4vw, 32px) clamp(12px, 3vw, 24px)',
               borderRadius: '20px',
               background: 'linear-gradient(135deg, rgba(245, 166, 35, 0.16) 0%, rgba(139, 26, 26, 0.14) 100%)',
               border: '2px solid var(--lantern-gold)',
               boxShadow: '0 0 40px rgba(245, 166, 35, 0.25)',
               position: 'relative',
               overflow: 'hidden',
+              maxWidth: '680px',
+              width: '100%',
+              margin: '0 auto',
+              boxSizing: 'border-box',
             }}
           >
             <div
@@ -1079,29 +1083,31 @@ export function CrosswordGame() {
             <p
               style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: '0.9rem',
-                fontWeight: 600,
+                fontSize: 'clamp(0.78rem, 2.2vw, 0.9rem)',
+                fontWeight: 700,
                 color: 'var(--lantern-gold-light)',
                 textTransform: 'uppercase',
-                letterSpacing: '0.15em',
+                letterSpacing: '0.08em',
                 marginBottom: '10px',
+                lineHeight: 1.4,
               }}
             >
               🎉 Bạn đã mở khóa thành công từ khóa cột dọc!
             </p>
 
             <motion.p
-              animate={{ scale: [1, 1.05, 1] }}
+              animate={{ scale: [1, 1.04, 1] }}
               transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
               className="glow-text"
               style={{
                 fontFamily: 'var(--font-heading)',
-                fontSize: 'clamp(2.2rem, 5vw, 3.2rem)',
+                fontSize: 'clamp(1.5rem, 6.2vw, 2.8rem)',
                 fontWeight: 900,
                 color: 'var(--lantern-gold)',
-                letterSpacing: '0.25em',
-                margin: '12px 0',
+                letterSpacing: 'clamp(0.06em, 1.8vw, 0.2em)',
+                margin: '10px 0',
                 textShadow: '0 0 20px rgba(245, 166, 35, 0.6), 0 0 40px rgba(245, 166, 35, 0.3)',
+                whiteSpace: 'nowrap',
               }}
             >
               ✨ SUM VẦY ✨
@@ -1110,12 +1116,15 @@ export function CrosswordGame() {
             <p
               style={{
                 fontFamily: 'var(--font-body)',
-                fontSize: '1rem',
-                color: 'rgba(255, 248, 231, 0.85)',
+                fontSize: 'clamp(0.88rem, 2.2vw, 1rem)',
+                color: '#FFF8E7',
                 maxWidth: '560px',
                 margin: '0 auto 20px auto',
                 lineHeight: 1.7,
                 fontStyle: 'italic',
+                padding: '0 6px',
+                wordBreak: 'normal',
+                overflowWrap: 'break-word',
               }}
             >
               Dù là ánh nến ấm áp từ chiếc đèn ông sao của ký ức hay ánh đèn LED rực rỡ hiện đại, ý nghĩa thiêng liêng nhất của đêm trăng rằm chính là khoảnh khắc cả gia đình cùng nhau{' '}

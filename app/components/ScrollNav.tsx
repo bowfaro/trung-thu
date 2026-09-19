@@ -42,24 +42,35 @@ export function ScrollNav() {
   };
 
   return (
-    <nav
-      id="scroll-nav"
-      style={{
-        position: 'fixed',
-        right: '20px',
-        top: '50%',
-        transform: 'translateY(-50%)',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '12px',
-        zIndex: 100,
-        padding: '16px 12px',
-        borderRadius: '30px',
-        background: 'rgba(26, 14, 46, 0.5)',
-        backdropFilter: 'blur(12px)',
-        border: '1px solid rgba(245, 166, 35, 0.15)',
-      }}
-    >
+    <>
+      <style>{`
+        @media (max-width: 860px) {
+          #scroll-nav {
+            display: none !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+          }
+        }
+      `}</style>
+      <nav
+        id="scroll-nav"
+        className="desktop-scroll-nav"
+        style={{
+          position: 'fixed',
+          right: '20px',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '12px',
+          zIndex: 100,
+          padding: '16px 12px',
+          borderRadius: '30px',
+          background: 'rgba(26, 14, 46, 0.5)',
+          backdropFilter: 'blur(12px)',
+          border: '1px solid rgba(245, 166, 35, 0.15)',
+        }}
+      >
       {SECTIONS.map(({ id, label }) => (
         <button
           key={id}
@@ -88,5 +99,6 @@ export function ScrollNav() {
         />
       ))}
     </nav>
+    </>
   );
 }

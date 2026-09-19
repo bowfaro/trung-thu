@@ -176,11 +176,11 @@ export function InfographicTable() {
           {/* Label */}
           <div
             style={{
-              width: '24%',
-              padding: '12px 14px',
+              width: '26%',
+              padding: '10px clamp(6px, 1.5vw, 14px)',
               background: `rgba(255,248,231,${0.03 + (i % 2) * 0.02})`,
               fontFamily: 'var(--font-body)',
-              fontSize: '0.84rem',
+              fontSize: 'clamp(0.74rem, 1.8vw, 0.84rem)',
               fontWeight: 700,
               color: '#FFE082',
               display: 'flex',
@@ -194,10 +194,10 @@ export function InfographicTable() {
           <div
             style={{
               flex: 1,
-              padding: '12px 14px',
+              padding: '10px clamp(6px, 1.5vw, 14px)',
               background: `rgba(245,166,35,${0.03 + (i % 2) * 0.02})`,
               fontFamily: 'var(--font-body)',
-              fontSize: '0.85rem',
+              fontSize: 'clamp(0.76rem, 1.8vw, 0.85rem)',
               color: 'var(--paper-cream)',
               lineHeight: 1.5,
               borderRight: '1px solid rgba(255,248,231,0.06)',
@@ -209,10 +209,10 @@ export function InfographicTable() {
           <div
             style={{
               flex: 1,
-              padding: '12px 14px',
+              padding: '10px clamp(6px, 1.5vw, 14px)',
               background: `rgba(79,195,247,${0.02 + (i % 2) * 0.015})`,
               fontFamily: 'var(--font-body)',
-              fontSize: '0.85rem',
+              fontSize: 'clamp(0.76rem, 1.8vw, 0.85rem)',
               color: 'var(--paper-cream)',
               lineHeight: 1.5,
             }}
