@@ -15,7 +15,7 @@ interface Hotspot {
 const HOTSPOTS: Hotspot[] = [
   {
     id: 'bamboo',
-    label: '🎋 Khung tre & Vành tròn',
+    label: 'Khung tre & Vành tròn',
     description:
       'Tre làm lồng đèn không phải lấy bừa bụi nào cũng được. Phải chọn đúng giống tre gai già, đốn về ngâm nước kỹ để chống mọt và tăng độ dẻo. Khó nhất là lúc hơ lửa uốn khung, tay người thợ phải nương theo thế nan tre, uốn từ từ cho vòng tròn vành vạnh mà tuyệt đối không được để nứt gãy.',
     x: '24%',
@@ -23,7 +23,7 @@ const HOTSPOTS: Hotspot[] = [
   },
   {
     id: 'paper',
-    label: '📄 Giấy bóng kính',
+    label: ' Giấy bóng kính',
     description:
       'Giấy kiếng loại tốt sờ vào nghe tiếng sột soạt rất đanh. Khi dán áo cho đèn, phải canh đúng lúc hồ vừa ráo tới. Bàn tay miết miết thật nhẹ, vuốt đều từ trong ra ngoài mép. Chỉ cần lỡ tay miết mạnh một chút, giấy nhăn chùng hoặc rách thủng là coi như hỏng, phải lột ra làm lại từ đầu.',
     x: '63.5%',
@@ -31,7 +31,7 @@ const HOTSPOTS: Hotspot[] = [
   },
   {
     id: 'glue',
-    label: '🫙 Hồ dán',
+    label: ' Hồ dán',
     description:
       'Mình không xài keo dán công nghiệp được, keo đó ăn mòn giấy và dễ giòn. Hồ dán chuẩn phải tự quấy bằng bột nếp đun nhỏ lửa. Tay khuấy liên tục không ngừng cho đến khi bột trong vắt, đặc quánh và thơm mùi gạo. Hồ này mà đã dính vô giấy kiếng với nan tre thì bám chắc lắm.',
     x: '48.5%',
@@ -76,7 +76,7 @@ export function ArtisanExplorer() {
                     // Fallback: one-time user interaction listener
                     const handleGesture = () => {
                       if (!manuallyPausedRef.current && audioRef.current) {
-                        audioRef.current.play().then(() => setIsPlaying(true)).catch(() => {});
+                        audioRef.current.play().then(() => setIsPlaying(true)).catch(() => { });
                       }
                       window.removeEventListener('click', handleGesture);
                       window.removeEventListener('touchstart', handleGesture);
@@ -122,7 +122,7 @@ export function ArtisanExplorer() {
           setIsPlaying(true);
           manuallyPausedRef.current = false;
         })
-        .catch(() => {});
+        .catch(() => { });
     }
   };
 
@@ -417,8 +417,8 @@ export function ArtisanExplorer() {
                       animate={
                         isPlaying
                           ? {
-                              scaleY: [0.3, 1, 0.4, 0.9, 0.3],
-                            }
+                            scaleY: [0.3, 1, 0.4, 0.9, 0.3],
+                          }
                           : { scaleY: 0.25 }
                       }
                       transition={{

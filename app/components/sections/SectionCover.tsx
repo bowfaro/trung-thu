@@ -314,7 +314,7 @@ export function SectionCover() {
                     textShadow: '0 0 12px rgba(255, 215, 0, 0.8)',
                   }}
                 >
-                   THÔNG ĐIỆP 
+                  THÔNG ĐIỆP
                 </span>
 
                 <p

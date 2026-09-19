@@ -5,7 +5,6 @@ import { AnimatePresence } from 'framer-motion';
 import { InfographicCarousel } from '../comparison/InfographicCarousel';
 import { VideoModal } from '../comparison/VideoModal';
 import { LanternVideoButton } from '../comparison/LanternVideoButton';
-import { SectionDivider } from '../SectionDivider';
 
 export function SectionComparison() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -45,10 +44,11 @@ export function SectionComparison() {
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 'clamp(1.4rem, 3.5vw, 2.2rem)',
-            fontWeight: 700,
-            color: 'var(--paper-cream)',
-            marginBottom: '24px',
+            fontSize: 'clamp(1.5rem, 3.8vw, 2.4rem)',
+            fontWeight: 800,
+            color: '#FFF8E7',
+            marginBottom: '20px',
+            textShadow: '0 2px 12px rgba(0,0,0,0.6)',
           }}
         >
           Giữa miền hoài niệm và tân thời
@@ -56,38 +56,36 @@ export function SectionComparison() {
       </div>
 
       {/* Dẫn nhập */}
-      <div className="fade-in-section" style={{ maxWidth: '700px', zIndex: 2, marginBottom: '24px' }}>
+      <div className="fade-in-section" style={{ maxWidth: '740px', zIndex: 2, marginBottom: '28px' }}>
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.88rem, 1.8vw, 1rem)',
-            color: 'rgba(255,248,231,0.7)',
-            lineHeight: 1.9,
-            textAlign: 'justify',
+            fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
+            color: '#FFF8E7',
+            lineHeight: 1.85,
+            textAlign: 'left',
             marginBottom: '16px',
           }}
         >
-          Từ những chiếc lồng đèn truyền thống được tạo nên bởi tre, giấy kiếng và ánh sáng dịu nhẹ của ngọn nến, lồng đèn ngày nay đã có một bước chuyển mình mạnh mẽ cùng sự phát triển của công nghệ. Sự xuất hiện của đèn LED, pin sạc và các thiết kế công nghiệp đã mang đến những mẫu lồng đèn đa dạng hơn về màu sắc, kiểu dáng và tính năng.
+          Từ những chiếc lồng đèn truyền thống được tạo nên bởi <span className="keyword-gold">tre, giấy kiếng và ánh sáng dịu nhẹ của ngọn nến</span>, lồng đèn ngày nay đã có một bước chuyển mình mạnh mẽ cùng sự phát triển của công nghệ. Sự xuất hiện của đèn LED, pin sạc và các thiết kế công nghiệp đã mang đến những mẫu lồng đèn đa dạng hơn về màu sắc, kiểu dáng và tính năng.
         </p>
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.88rem, 1.8vw, 1rem)',
-            color: 'rgba(255,248,231,0.65)',
-            lineHeight: 1.9,
-            textAlign: 'justify',
+            fontSize: 'clamp(0.94rem, 1.8vw, 1.04rem)',
+            color: 'rgba(255, 248, 231, 0.94)',
+            lineHeight: 1.85,
+            textAlign: 'left',
           }}
         >
-          Không chỉ phát sáng đơn thuần, nhiều chiếc đèn hiện đại còn có khả năng đổi màu, phát nhạc, chuyển động hoặc mô phỏng các nhân vật quen thuộc, nhanh chóng thu hút sự chú ý của trẻ em và người tiêu dùng. Nhờ sự tiện lợi, bền bỉ và phù hợp với thị hiếu mới, lồng đèn hiện đại đang dần trở thành một phần quen thuộc trong không khí Trung thu, tạo nên một &quot;cuộc đua ánh sáng&quot; giữa nét đẹp truyền thống và sự đổi mới của thời đại.
+          Không chỉ phát sáng đơn thuần, nhiều chiếc đèn hiện đại còn có khả năng đổi màu, phát nhạc, chuyển động hoặc mô phỏng các nhân vật quen thuộc, nhanh chóng thu hút sự chú ý của trẻ em và người tiêu dùng. Nhờ sự tiện lợi, bền bỉ và phù hợp với thị hiếu mới, lồng đèn hiện đại đang dần trở thành một phần quen thuộc trong không khí Trung thu, tạo nên một <span className="keyword-gold">&quot;cuộc đua ánh sáng&quot;</span> giữa nét đẹp truyền thống và sự đổi mới của thời đại.
         </p>
       </div>
 
       {/* Video Lantern Button */}
-      <div className="fade-in-section" style={{ zIndex: 2, marginBottom: '24px' }}>
+      <div className="fade-in-section" style={{ zIndex: 2, marginBottom: '52px' }}>
         <LanternVideoButton onOpenVideo={() => setShowVideo(true)} />
       </div>
-
-      <SectionDivider />
 
       {/* Infographic comparison carousel/slide */}
       <div
@@ -108,11 +106,11 @@ export function SectionComparison() {
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.85rem, 1.6vw, 0.95rem)',
-            color: 'rgba(255, 248, 231, 0.65)',
-            fontStyle: 'italic',
+            fontSize: 'clamp(0.88rem, 1.6vw, 0.98rem)',
+            color: '#FFF8E7',
+            fontWeight: 600,
             textAlign: 'center',
-            marginTop: '4px',
+            marginTop: '8px',
           }}
         >
           So sánh thông tin giữa đèn truyền thống và hiện đại
@@ -120,14 +118,14 @@ export function SectionComparison() {
       </div>
 
       {/* Kết thúc tít 2 */}
-      <div className="fade-in-section" style={{ maxWidth: '700px', zIndex: 2, marginTop: '28px' }}>
+      <div className="fade-in-section" style={{ maxWidth: '740px', zIndex: 2, marginTop: '36px' }}>
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.88rem, 1.8vw, 1rem)',
-            color: 'rgba(255,248,231,0.7)',
-            lineHeight: 1.9,
-            textAlign: 'justify',
+            fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
+            color: '#FFF8E7',
+            lineHeight: 1.85,
+            textAlign: 'left',
           }}
         >
           Từ những chiếc lồng đèn thủ công mang dấu ấn ký ức đến những thiết kế hiện đại, tiện dụng và bắt mắt, lồng đèn Trung thu đang cho thấy khả năng thích nghi của một nét văn hóa lâu đời. Sự thay đổi ấy không làm mất đi giá trị truyền thống mà mở ra một cách tiếp cận mới, nơi cũ và mới cùng hiện diện trong đời sống. Qua infographic, sự khác biệt giữa hai thế hệ lồng đèn được nhìn nhận rõ hơn, từ đó cho thấy cách một món đồ quen thuộc đang chuyển mình theo thời gian.

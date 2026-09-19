@@ -3,7 +3,6 @@
 import { useEffect, useRef } from 'react';
 import { CrosswordGame } from '../crossword/CrosswordGame';
 import { ArtisanExplorer } from '../artisan/ArtisanExplorer';
-import { SectionDivider } from '../SectionDivider';
 
 export function SectionRiddle() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -50,10 +49,11 @@ export function SectionRiddle() {
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 'clamp(1.4rem, 3.5vw, 2.2rem)',
-            fontWeight: 700,
-            color: 'var(--paper-cream)',
-            marginBottom: '24px',
+            fontSize: 'clamp(1.5rem, 3.8vw, 2.4rem)',
+            fontWeight: 800,
+            color: '#FFF8E7',
+            marginBottom: '20px',
+            textShadow: '0 2px 12px rgba(0,0,0,0.6)',
           }}
         >
           Chiếc đèn đi qua những mùa trăng
@@ -61,14 +61,14 @@ export function SectionRiddle() {
       </div>
 
       {/* Sapo text */}
-      <div className="fade-in-section" style={{ maxWidth: '700px', zIndex: 2, marginBottom: '20px' }}>
+      <div className="fade-in-section" style={{ maxWidth: '740px', zIndex: 2, marginBottom: '28px' }}>
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.88rem, 1.8vw, 1rem)',
-            color: 'rgba(255,248,231,0.7)',
-            lineHeight: 1.9,
-            textAlign: 'justify',
+            fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
+            color: '#FFF8E7',
+            lineHeight: 1.85,
+            textAlign: 'left',
             marginBottom: '16px',
           }}
         >
@@ -77,10 +77,10 @@ export function SectionRiddle() {
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.88rem, 1.8vw, 1rem)',
-            color: 'rgba(255,248,231,0.6)',
-            lineHeight: 1.9,
-            textAlign: 'justify',
+            fontSize: 'clamp(0.94rem, 1.8vw, 1.04rem)',
+            color: 'rgba(255,248,231,0.92)',
+            lineHeight: 1.85,
+            textAlign: 'left',
             fontStyle: 'italic',
           }}
         >
@@ -89,11 +89,9 @@ export function SectionRiddle() {
       </div>
 
       {/* Crossword */}
-      <div className="fade-in-section" style={{ width: '100%', maxWidth: '1150px', zIndex: 2 }}>
+      <div className="fade-in-section" style={{ width: '100%', maxWidth: '1150px', zIndex: 2, marginBottom: '56px' }}>
         <CrosswordGame />
       </div>
-
-      <SectionDivider />
 
       {/* Artisan Explorer */}
       <div className="fade-in-section" style={{ width: '100%', display: 'flex', justifyContent: 'center', zIndex: 2 }}>

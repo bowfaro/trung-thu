@@ -143,9 +143,9 @@ export function SectionGame() {
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.9rem, 1.8vw, 1.02rem)',
-            color: 'rgba(255, 248, 231, 0.75)',
-            lineHeight: 1.6,
+            fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
+            color: '#FFF8E7',
+            lineHeight: 1.7,
           }}
         >
           Chọn khung nan tre uốn tay truyền thống, bọc lớp giấy kiếng rực rỡ và thắp lên ánh nến ấm áp cho mùa Trung thu.
@@ -412,7 +412,7 @@ export function SectionGame() {
               >
                 <span>✨</span> BẢNG CHỌN KHUNG <span>✨</span>
               </h3>
-              <p style={{ fontSize: '0.75rem', color: 'rgba(255, 248, 231, 0.65)', marginTop: '4px' }}>
+              <p style={{ fontSize: '0.8rem', color: '#FFF8E7', marginTop: '4px', fontWeight: 500 }}>
                 Chọn 1 trong 6 dáng khung nan tre đan tay truyền thống
               </p>
             </div>
@@ -536,7 +536,7 @@ export function SectionGame() {
                 >
                   2. CHỌN MÀU GIẤY KIẾNG
                 </h4>
-                <p style={{ fontSize: '0.72rem', color: 'rgba(255,248,231,0.6)', marginTop: '2px' }}>
+                <p style={{ fontSize: '0.78rem', color: '#FFF8E7', marginTop: '2px', fontWeight: 500 }}>
                   Lớp giấy kính trong suốt truyền thống cho ánh sáng tỏa rực rỡ
                 </p>
               </div>
@@ -546,13 +546,13 @@ export function SectionGame() {
                 <button
                   onClick={() => setLanternColor('')}
                   style={{
-                    background: 'rgba(255, 213, 79, 0.1)',
-                    border: '1px solid rgba(255, 213, 79, 0.3)',
+                    background: 'rgba(255, 213, 79, 0.18)',
+                    border: '1.5px solid #FFE082',
                     color: '#FFE082',
                     borderRadius: '12px',
-                    padding: '4px 10px',
-                    fontSize: '0.68rem',
-                    fontWeight: 600,
+                    padding: '5px 12px',
+                    fontSize: '0.72rem',
+                    fontWeight: 700,
                     cursor: 'pointer',
                   }}
                 >
@@ -609,7 +609,7 @@ export function SectionGame() {
                 );
               })}
             </div>
-            <p style={{ textAlign: 'center', fontFamily: 'var(--font-body)', fontSize: '0.75rem', color: selectedColorData ? selectedColorData.hex : '#DDAA55', marginTop: '8px', fontWeight: 600 }}>
+            <p style={{ textAlign: 'center', fontFamily: 'var(--font-body)', fontSize: '0.82rem', color: selectedColorData ? selectedColorData.hex : '#FFE082', marginTop: '10px', fontWeight: 700 }}>
               {selectedColorData ? `Màu đã chọn: ${selectedColorData.name}` : 'Đang xem: Khung nan tre mộc chưa bọc giấy'}
             </p>
           </div>
@@ -651,7 +651,7 @@ export function SectionGame() {
                       borderRadius: '12px',
                       background: isSelected ? 'rgba(255, 213, 79, 0.2)' : 'rgba(255, 255, 255, 0.04)',
                       border: `1.5px solid ${isSelected ? '#FFD54F' : 'rgba(255, 255, 255, 0.1)'}`,
-                      color: isSelected ? '#FFE082' : 'rgba(255, 248, 231, 0.75)',
+                      color: isSelected ? '#FFE082' : '#FFF8E7',
                       cursor: 'pointer',
                       display: 'flex',
                       flexDirection: 'column',
@@ -676,12 +676,12 @@ export function SectionGame() {
               style={{
                 padding: '12px 24px',
                 borderRadius: '30px',
-                border: '1px solid rgba(255, 248, 231, 0.2)',
-                background: 'rgba(255, 248, 231, 0.06)',
-                color: 'rgba(255, 248, 231, 0.65)',
+                border: '1.5px solid rgba(255, 248, 231, 0.4)',
+                background: 'rgba(255, 248, 231, 0.12)',
+                color: '#FFF8E7',
                 fontFamily: 'var(--font-heading)',
-                fontSize: '0.85rem',
-                fontWeight: 600,
+                fontSize: '0.88rem',
+                fontWeight: 700,
                 cursor: 'pointer',
                 transition: 'all 0.2s ease',
               }}
@@ -706,8 +706,8 @@ export function SectionGame() {
                 background: canComplete
                   ? 'linear-gradient(135deg, #FFD54F 0%, #FFA000 50%, #FF6F00 100%)'
                   : 'rgba(255, 248, 231, 0.08)',
-                color: canComplete ? '#3E1C00' : 'rgba(255, 248, 231, 0.35)',
-                border: canComplete ? 'none' : '1px solid rgba(255, 248, 231, 0.1)',
+                color: canComplete ? '#261200' : 'rgba(255, 248, 231, 0.65)',
+                border: canComplete ? 'none' : '1px solid rgba(255, 248, 231, 0.25)',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '8px',

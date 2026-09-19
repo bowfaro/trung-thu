@@ -48,7 +48,9 @@
 }
 
 /* ── Base Reset ──────────────────────────────────────────── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -70,13 +72,18 @@ body {
 }
 
 /* ── Typography ──────────────────────────────────────────── */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-heading);
   line-height: 1.2;
   margin: 0;
 }
 
-p { margin: 0; }
+p {
+  margin: 0;
+}
 
 /* ── Section Base ────────────────────────────────────────── */
 .section {
@@ -111,21 +118,39 @@ p { margin: 0; }
 
 /* ── Glow Effects ────────────────────────────────────────── */
 @keyframes lanternGlow {
-  0%, 100% {
-    filter: drop-shadow(0 0 20px rgba(245, 166, 35, 0.6))
-            drop-shadow(0 0 40px rgba(245, 166, 35, 0.3));
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 20px rgba(245, 166, 35, 0.6)) drop-shadow(0 0 40px rgba(245, 166, 35, 0.3));
   }
+
   50% {
-    filter: drop-shadow(0 0 30px rgba(245, 166, 35, 0.8))
-            drop-shadow(0 0 60px rgba(245, 166, 35, 0.5));
+    filter: drop-shadow(0 0 30px rgba(245, 166, 35, 0.8)) drop-shadow(0 0 60px rgba(245, 166, 35, 0.5));
   }
 }
 
 @keyframes candleFlicker {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  25% { opacity: 0.85; transform: scale(0.97); }
-  50% { opacity: 0.95; transform: scale(1.02); }
-  75% { opacity: 0.88; transform: scale(0.99); }
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  25% {
+    opacity: 0.85;
+    transform: scale(0.97);
+  }
+
+  50% {
+    opacity: 0.95;
+    transform: scale(1.02);
+  }
+
+  75% {
+    opacity: 0.88;
+    transform: scale(0.99);
+  }
 }
 
 @keyframes floatUp {
@@ -133,8 +158,15 @@ p { margin: 0; }
     transform: translateY(0) translateX(0);
     opacity: 0;
   }
-  10% { opacity: 1; }
-  90% { opacity: 0.8; }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0.8;
+  }
+
   100% {
     transform: translateY(-100vh) translateX(30px);
     opacity: 0;
@@ -142,48 +174,82 @@ p { margin: 0; }
 }
 
 @keyframes shimmer {
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
 }
 
 @keyframes pulseGlow {
-  0%, 100% {
+
+  0%,
+  100% {
     box-shadow: 0 0 15px rgba(245, 166, 35, 0.4),
-                0 0 30px rgba(245, 166, 35, 0.2);
+      0 0 30px rgba(245, 166, 35, 0.2);
   }
+
   50% {
     box-shadow: 0 0 25px rgba(245, 166, 35, 0.7),
-                0 0 50px rgba(245, 166, 35, 0.4);
+      0 0 50px rgba(245, 166, 35, 0.4);
   }
 }
 
 @keyframes textGlow {
-  0%, 100% {
+
+  0%,
+  100% {
     text-shadow: 0 0 10px rgba(245, 166, 35, 0.5),
-                 0 0 20px rgba(245, 166, 35, 0.3),
-                 0 0 40px rgba(245, 166, 35, 0.1);
+      0 0 20px rgba(245, 166, 35, 0.3),
+      0 0 40px rgba(245, 166, 35, 0.1);
   }
+
   50% {
     text-shadow: 0 0 20px rgba(245, 166, 35, 0.8),
-                 0 0 40px rgba(245, 166, 35, 0.5),
-                 0 0 60px rgba(245, 166, 35, 0.3);
+      0 0 40px rgba(245, 166, 35, 0.5),
+      0 0 60px rgba(245, 166, 35, 0.3);
   }
 }
 
 @keyframes moonRise {
-  0% { transform: translateY(30px); opacity: 0.6; }
-  100% { transform: translateY(0); opacity: 1; }
+  0% {
+    transform: translateY(30px);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slideReveal {
-  0% { clip-path: circle(0% at 50% 50%); }
-  100% { clip-path: circle(150% at 50% 50%); }
+  0% {
+    clip-path: circle(0% at 50% 50%);
+  }
+
+  100% {
+    clip-path: circle(150% at 50% 50%);
+  }
 }
 
 @keyframes cascadeGlow {
-  0% { opacity: 0; transform: translateY(-10px); }
-  50% { opacity: 1; transform: translateY(0); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ── Particle Effect ─────────────────────────────────────── */
@@ -237,7 +303,7 @@ p { margin: 0; }
 .btn-lantern:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(245, 166, 35, 0.5),
-              0 0 60px rgba(245, 166, 35, 0.3);
+    0 0 60px rgba(245, 166, 35, 0.3);
 }
 
 .btn-lantern:active {
@@ -245,12 +311,19 @@ p { margin: 0; }
 }
 
 /* ── Custom Scrollbar ─────────────────────────────────────── */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--night-deep); }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--night-deep);
+}
+
 ::-webkit-scrollbar-thumb {
   background: rgba(245, 166, 35, 0.3);
   border-radius: 3px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(245, 166, 35, 0.5);
 }

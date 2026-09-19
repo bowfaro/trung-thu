@@ -505,13 +505,13 @@ export function CrosswordGame() {
                         border: isDone
                           ? '1px solid var(--bamboo-green)'
                           : isCurrent
-                          ? '1px solid var(--lantern-gold)'
-                          : '1px solid rgba(255, 248, 231, 0.15)',
+                            ? '1px solid var(--lantern-gold)'
+                            : '1px solid rgba(255, 248, 231, 0.15)',
                         background: isDone
                           ? 'var(--bamboo-green)'
                           : isCurrent
-                          ? 'var(--lantern-gold)'
-                          : 'rgba(255, 248, 231, 0.05)',
+                            ? 'var(--lantern-gold)'
+                            : 'rgba(255, 248, 231, 0.05)',
                         color: isDone ? '#fff' : isCurrent ? '#2C1810' : 'rgba(255, 248, 231, 0.6)',
                         fontFamily: 'var(--font-body)',
                         fontSize: '0.8rem',
@@ -644,26 +644,6 @@ export function CrosswordGame() {
                     background: 'linear-gradient(to top, rgba(26, 14, 46, 0.85) 0%, rgba(26, 14, 46, 0.1) 60%, transparent 100%)',
                   }}
                 />
-
-                {/* Top Badge: 📷 Ảnh gợi ý */}
-                <span
-                  style={{
-                    position: 'absolute',
-                    top: '10px',
-                    left: '10px',
-                    background: 'rgba(26, 14, 46, 0.8)',
-                    backdropFilter: 'blur(6px)',
-                    border: '1px solid rgba(245, 166, 35, 0.4)',
-                    color: 'var(--lantern-gold-light)',
-                    fontFamily: 'var(--font-body)',
-                    fontSize: '0.72rem',
-                    fontWeight: 600,
-                    padding: '3px 8px',
-                    borderRadius: '6px',
-                  }}
-                >
-                  📷 Ảnh gợi ý hàng #{activeClue.index + 1}
-                </span>
 
                 {/* Solved Overlay Badge */}
                 {isCurrentSolved && (
@@ -912,18 +892,18 @@ export function CrosswordGame() {
                       border: isCompleted
                         ? '1px solid var(--bamboo-green)'
                         : isActive
-                        ? '1px solid var(--lantern-gold)'
-                        : '1px solid rgba(255, 248, 231, 0.15)',
+                          ? '1px solid var(--lantern-gold)'
+                          : '1px solid rgba(255, 248, 231, 0.15)',
                       background: isCompleted
                         ? 'var(--bamboo-green)'
                         : isActive
-                        ? 'var(--lantern-gold)'
-                        : 'rgba(255, 248, 231, 0.05)',
+                          ? 'var(--lantern-gold)'
+                          : 'rgba(255, 248, 231, 0.05)',
                       color: isCompleted
                         ? '#FFFFFF'
                         : isActive
-                        ? '#2C1810'
-                        : 'rgba(255, 248, 231, 0.6)',
+                          ? '#2C1810'
+                          : 'rgba(255, 248, 231, 0.6)',
                       cursor: 'pointer',
                       transition: 'all 0.2s ease',
                     }}
@@ -1014,24 +994,24 @@ export function CrosswordGame() {
                                 ? 'linear-gradient(135deg, rgba(245, 166, 35, 0.42), rgba(245, 166, 35, 0.22))'
                                 : 'rgba(91, 122, 58, 0.28)'
                               : isKeyCell
-                              ? 'rgba(245, 166, 35, 0.18)'
-                              : 'rgba(255, 248, 231, 0.08)',
+                                ? 'rgba(245, 166, 35, 0.18)'
+                                : 'rgba(255, 248, 231, 0.08)',
                             border: isCompleted
                               ? isKeyCell
                                 ? '2px solid var(--lantern-gold)'
                                 : '1.5px solid var(--bamboo-green)'
                               : isKeyCell
-                              ? '2px solid rgba(245, 166, 35, 0.7)'
-                              : isActive
-                              ? '1.5px solid rgba(255, 248, 231, 0.4)'
-                              : '1.5px solid rgba(255, 248, 231, 0.18)',
+                                ? '2px solid rgba(245, 166, 35, 0.7)'
+                                : isActive
+                                  ? '1.5px solid rgba(255, 248, 231, 0.4)'
+                                  : '1.5px solid rgba(255, 248, 231, 0.18)',
                             color: isCompleted
                               ? isKeyCell
                                 ? 'var(--lantern-gold)'
                                 : '#81C784'
                               : isKeyCell
-                              ? 'var(--lantern-gold-light)'
-                              : 'var(--paper-cream)',
+                                ? 'var(--lantern-gold-light)'
+                                : 'var(--paper-cream)',
                             boxShadow: isKeyCell
                               ? '0 0 10px rgba(245, 166, 35, 0.25)'
                               : 'none',
@@ -1062,7 +1042,7 @@ export function CrosswordGame() {
 
           <div style={{ marginTop: '8px', textAlign: 'center' }}>
             <span style={{ fontSize: '0.75rem', color: 'rgba(255, 248, 231, 0.4)', fontStyle: 'italic' }}>
-              💡 Nhấp vào ô bất kỳ để gõ chữ cái. Dùng phím ← → để di chuyển, Enter để kiểm tra.
+              Nhấp vào ô bất kỳ để gõ chữ cái. Dùng phím ← → để di chuyển, Enter để kiểm tra.
             </span>
           </div>
         </div>

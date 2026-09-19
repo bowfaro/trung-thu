@@ -32,8 +32,8 @@ export function QuoteCard({ quote, author, role }: QuoteCardProps) {
       <p
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: 'clamp(0.9rem, 1.8vw, 1rem)',
-          color: 'rgba(255,248,231,0.8)',
+          fontSize: 'clamp(0.95rem, 1.8vw, 1.05rem)',
+          color: '#FFF8E7',
           lineHeight: 1.8,
           fontStyle: 'italic',
           marginBottom: '12px',
@@ -44,14 +44,14 @@ export function QuoteCard({ quote, author, role }: QuoteCardProps) {
       <p
         style={{
           fontFamily: 'var(--font-body)',
-          fontSize: '0.85rem',
-          color: 'var(--lantern-gold)',
-          fontWeight: 600,
+          fontSize: '0.88rem',
+          color: '#FFE082',
+          fontWeight: 700,
         }}
       >
         — {author}
         {role && (
-          <span style={{ fontWeight: 400, color: 'rgba(255,248,231,0.5)', marginLeft: '6px' }}>
+          <span style={{ fontWeight: 400, color: 'rgba(255,248,231,0.85)', marginLeft: '6px' }}>
             {role}
           </span>
         )}

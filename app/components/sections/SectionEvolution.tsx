@@ -3,7 +3,6 @@
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { BeforeAfterSlider } from '../comparison/BeforeAfterSlider';
-import { SectionDivider } from '../SectionDivider';
 
 export function SectionEvolution() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -41,10 +40,11 @@ export function SectionEvolution() {
         <h2
           style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 'clamp(1.4rem, 3.5vw, 2.2rem)',
-            fontWeight: 700,
-            color: 'var(--paper-cream)',
-            marginBottom: '24px',
+            fontSize: 'clamp(1.5rem, 3.8vw, 2.4rem)',
+            fontWeight: 800,
+            color: '#FFF8E7',
+            marginBottom: '20px',
+            textShadow: '0 2px 12px rgba(0,0,0,0.6)',
           }}
         >
           Những ánh đèn kể chuyện mùa trăng
@@ -52,36 +52,34 @@ export function SectionEvolution() {
       </div>
 
       {/* Dẫn nhập */}
-      <div className="fade-in-section" style={{ maxWidth: '700px', zIndex: 2, marginBottom: '32px' }}>
+      <div className="fade-in-section" style={{ maxWidth: '740px', zIndex: 2, marginBottom: '32px' }}>
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.88rem, 1.8vw, 1rem)',
-            color: 'rgba(255,248,231,0.7)',
-            lineHeight: 1.9,
-            textAlign: 'justify',
+            fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
+            color: '#FFF8E7',
+            lineHeight: 1.85,
+            textAlign: 'left',
           }}
         >
-          Đèn lồng Trung thu ngày nay không còn bó hẹp trong những khuôn dáng quen thuộc của ký ức. Bên cạnh những chiếc đèn ông sao, đèn kéo quân hay đèn giấy truyền thống, nhiều mẫu đèn mới được sáng tạo với kiểu dáng đa dạng, màu sắc bắt mắt và hình thức phù hợp hơn với thị hiếu của người trẻ.
+          Đèn lồng Trung thu ngày nay không còn bó hẹp trong những khuôn dáng quen thuộc của ký ức. Bên cạnh những chiếc <span className="keyword-gold">đèn ông sao, đèn kéo quân hay đèn giấy truyền thống</span>, nhiều mẫu đèn mới được sáng tạo với kiểu dáng đa dạng, màu sắc bắt mắt và hình thức phù hợp hơn với thị hiếu của người trẻ.
         </p>
       </div>
 
       {/* Before/After Slider */}
-      <div className="fade-in-section" style={{ width: '100%', maxWidth: '600px', zIndex: 2, marginBottom: '24px' }}>
+      <div className="fade-in-section" style={{ width: '100%', maxWidth: '640px', zIndex: 2, marginBottom: '52px' }}>
         <BeforeAfterSlider />
       </div>
 
-      <SectionDivider />
-
       {/* Dẫn dắt vào box phỏng vấn */}
-      <div className="fade-in-section" style={{ maxWidth: '700px', zIndex: 2, marginBottom: '16px' }}>
+      <div className="fade-in-section" style={{ maxWidth: '740px', zIndex: 2, marginBottom: '18px' }}>
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.88rem, 1.8vw, 1rem)',
-            color: 'rgba(255,248,231,0.7)',
-            lineHeight: 1.9,
-            textAlign: 'justify',
+            fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
+            color: '#FFF8E7',
+            lineHeight: 1.85,
+            textAlign: 'left',
           }}
         >
           Những hình ảnh quen thuộc như con vật, nhân vật hoạt hình hay họa tiết hiện đại cũng được đưa vào thiết kế, khiến chiếc đèn trở nên gần gũi hơn với trẻ em hôm nay:
@@ -93,9 +91,9 @@ export function SectionEvolution() {
         className="fade-in-section"
         style={{
           width: '100%',
-          maxWidth: '700px',
+          maxWidth: '720px',
           zIndex: 2,
-          marginBottom: '32px',
+          marginBottom: '52px',
           display: 'flex',
           justifyContent: 'center',
         }}
@@ -105,29 +103,28 @@ export function SectionEvolution() {
           alt="Chia sẻ từ Chị Thanh Trúc — nghệ nhân làm lồng đèn ở Hội An"
           width={922}
           height={985}
-          sizes="(max-width: 768px) 100vw, 700px"
+          sizes="(max-width: 768px) 100vw, 720px"
           style={{
             width: '100%',
             height: 'auto',
             display: 'block',
+            borderRadius: '12px',
           }}
         />
       </div>
 
-      <SectionDivider />
-
       {/* Connecting text */}
-      <div className="fade-in-section" style={{ maxWidth: '700px', zIndex: 2, marginBottom: '24px' }}>
+      <div className="fade-in-section" style={{ maxWidth: '740px', zIndex: 2, marginBottom: '28px' }}>
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.88rem, 1.8vw, 1rem)',
-            color: 'rgba(255,248,231,0.65)',
-            lineHeight: 1.9,
-            textAlign: 'justify',
+            fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
+            color: '#FFF8E7',
+            lineHeight: 1.85,
+            textAlign: 'left',
           }}
         >
-          Dù khoác lên mình những hình dáng và chất liệu mới, những chiếc đèn ấy vẫn giữ lại tinh thần của mùa trăng, là ánh sáng, là niềm vui và là ký ức Trung thu được truyền từ thế hệ này sang thế hệ khác. Đèn lồng có thể đổi dáng, đổi màu, đổi chất liệu, nhưng ánh sáng của mùa trăng thì vẫn được thắp lên từ những ký ức quen thuộc.
+          Dù khoác lên mình những hình dáng và chất liệu mới, những chiếc đèn ấy vẫn giữ lại tinh thần của mùa trăng — là ánh sáng, là niềm vui và là <span className="keyword-gold">ký ức Trung thu được truyền từ thế hệ này sang thế hệ khác</span>. Đèn lồng có thể đổi dáng, đổi màu, đổi chất liệu, nhưng ánh sáng của mùa trăng thì vẫn được thắp lên từ những ký ức quen thuộc.
         </p>
       </div>
 
@@ -138,7 +135,7 @@ export function SectionEvolution() {
           width: '100%',
           maxWidth: '750px',
           zIndex: 2,
-          margin: '0 auto 28px auto',
+          margin: '0 auto 52px auto',
           padding: 0,
         }}
       >
@@ -195,33 +192,29 @@ export function SectionEvolution() {
         <figcaption
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: "0.85rem",
-            color: 'rgba(255, 248, 231, 0.65)',
+            fontSize: "0.88rem",
+            color: '#FFF8E7',
+            fontWeight: 500,
             lineHeight: 1.6,
             fontStyle: 'italic',
             textAlign: 'center',
-            marginTop: '10px',
+            marginTop: '12px',
             padding: '0 8px',
           }}
         >
           Dù là chiếc đèn truyền thống hay những mẫu đèn hiện đại, các em vẫn háo hức với niềm vui rước đèn mỗi dịp Trung thu. (Ảnh: Sưu tầm)
         </figcaption>
-
-        {/* Nút xem thư viện ảnh */}
-
       </figure>
 
-      <SectionDivider />
-
       {/* Dẫn dắt vào phỏng vấn Chị Trang */}
-      <div className="fade-in-section" style={{ maxWidth: '700px', zIndex: 2, marginBottom: '16px' }}>
+      <div className="fade-in-section" style={{ maxWidth: '740px', zIndex: 2, marginBottom: '18px' }}>
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.88rem, 1.8vw, 1rem)',
-            color: 'rgba(255,248,231,0.7)',
-            lineHeight: 1.9,
-            textAlign: 'justify',
+            fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
+            color: '#FFF8E7',
+            lineHeight: 1.85,
+            textAlign: 'left',
           }}
         >
           Mỗi mùa Trung thu đi qua, những chiếc đèn lồng lại mang một dáng hình mới. Sự thay đổi ấy không nhất thiết là câu chuyện của cũ và mới, càng không phải cuộc thay thế giữa truyền thống và hiện đại.
@@ -233,9 +226,9 @@ export function SectionEvolution() {
         className="fade-in-section"
         style={{
           width: '100%',
-          maxWidth: '700px',
+          maxWidth: '720px',
           zIndex: 2,
-          marginBottom: '32px',
+          marginBottom: '52px',
           display: 'flex',
           justifyContent: 'center',
         }}
@@ -245,27 +238,26 @@ export function SectionEvolution() {
           alt="Chia sẻ từ Chị Nguyễn Thị Trang — Đà Nẵng"
           width={841}
           height={980}
-          sizes="(max-width: 768px) 100vw, 700px"
+          sizes="(max-width: 768px) 100vw, 720px"
           style={{
             width: '100%',
             height: 'auto',
             display: 'block',
+            borderRadius: '12px',
           }}
         />
       </div>
 
-      <SectionDivider />
-
       {/* Kết bài */}
-      <div className="fade-in-section" style={{ maxWidth: '700px', zIndex: 2, marginTop: '8px' }}>
+      <div className="fade-in-section" style={{ maxWidth: '740px', zIndex: 2, marginTop: '8px' }}>
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.88rem, 1.8vw, 1rem)',
-            color: 'rgba(255,248,231,0.65)',
-            lineHeight: 1.9,
-            textAlign: 'justify',
-            marginBottom: '16px',
+            fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
+            color: '#FFF8E7',
+            lineHeight: 1.85,
+            textAlign: 'left',
+            marginBottom: '20px',
           }}
         >
           Đó là quá trình những giá trị cũ gặp gỡ những điều mới để tiếp tục tồn tại trong đời sống hôm nay. Chiếc đèn truyền thống mang theo câu chuyện của người làm, của những mùa trăng đã qua; chiếc đèn hiện đại lại đem đến những cách thể hiện độc đáo, đa dạng, phù hợp với sở thích và nhịp sống của thế hệ hôm nay. Khi đặt cạnh nhau, mỗi chiếc đèn góp một ánh sáng riêng cho bức tranh Trung thu toả sáng đầy màu sắc.
@@ -279,7 +271,7 @@ export function SectionEvolution() {
           width: '100%',
           maxWidth: '750px',
           zIndex: 2,
-          margin: '12px auto 24px auto',
+          margin: '12px auto 28px auto',
           padding: 0,
         }}
       >
@@ -336,12 +328,13 @@ export function SectionEvolution() {
         <figcaption
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: '0.85rem',
-            color: 'rgba(255, 248, 231, 0.65)',
+            fontSize: '0.88rem',
+            color: '#FFF8E7',
+            fontWeight: 500,
             lineHeight: 1.6,
             fontStyle: 'italic',
             textAlign: 'center',
-            marginTop: '10px',
+            marginTop: '12px',
             padding: '0 8px',
           }}
         >
@@ -349,18 +342,18 @@ export function SectionEvolution() {
         </figcaption>
       </figure>
 
-      <div className="fade-in-section" style={{ maxWidth: '700px', zIndex: 2, marginTop: '8px' }}>
+      <div className="fade-in-section" style={{ maxWidth: '740px', zIndex: 2, marginTop: '12px' }}>
         <p
           style={{
             fontFamily: 'var(--font-body)',
-            fontSize: 'clamp(0.88rem, 1.8vw, 1rem)',
-            color: 'rgba(255,248,231,0.55)',
-            lineHeight: 1.9,
-            textAlign: 'justify',
+            fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
+            color: '#FFF8E7',
+            lineHeight: 1.85,
+            textAlign: 'left',
 
           }}
         >
-          Có lẽ, điều khiến những ánh đèn gặp nhau không nằm ở hình dáng hay cách thắp sáng, mà ở niềm vui và sự đoàn viên phía sau mỗi chiếc đèn. Truyền thống không chỉ thuộc về những mùa trăng đã qua, mà tiếp tục được thắp sáng trong những dáng hình mới của hôm nay.
+          Có lẽ, điều khiến những ánh đèn gặp nhau không nằm ở hình dáng hay cách thắp sáng, mà ở <span className="keyword-gold">niềm vui và sự đoàn viên</span> phía sau mỗi chiếc đèn. Truyền thống không chỉ thuộc về những mùa trăng đã qua, mà tiếp tục được thắp sáng trong những dáng hình mới của hôm nay.
         </p>
       </div>
     </section>
