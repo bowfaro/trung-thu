@@ -63,7 +63,8 @@ export function SectionComparison() {
             fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
             color: '#FFF8E7',
             lineHeight: 1.85,
-            textAlign: 'left',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
             marginBottom: '16px',
           }}
         >
@@ -75,7 +76,8 @@ export function SectionComparison() {
             fontSize: 'clamp(0.94rem, 1.8vw, 1.04rem)',
             color: 'rgba(255, 248, 231, 0.94)',
             lineHeight: 1.85,
-            textAlign: 'left',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
           }}
         >
           Không chỉ phát sáng đơn thuần, nhiều chiếc đèn hiện đại còn có khả năng đổi màu, phát nhạc, chuyển động hoặc mô phỏng các nhân vật quen thuộc, nhanh chóng thu hút sự chú ý của trẻ em và người tiêu dùng. Nhờ sự tiện lợi, bền bỉ và phù hợp với thị hiếu mới, lồng đèn hiện đại đang dần trở thành một phần quen thuộc trong không khí Trung thu, tạo nên một <span className="keyword-gold">&quot;cuộc đua ánh sáng&quot;</span> giữa nét đẹp truyền thống và sự đổi mới của thời đại.
@@ -125,7 +127,8 @@ export function SectionComparison() {
             fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
             color: '#FFF8E7',
             lineHeight: 1.85,
-            textAlign: 'left',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
           }}
         >
           Từ những chiếc lồng đèn thủ công mang dấu ấn ký ức đến những thiết kế hiện đại, tiện dụng và bắt mắt, lồng đèn Trung thu đang cho thấy khả năng thích nghi của một nét văn hóa lâu đời. Sự thay đổi ấy không làm mất đi giá trị truyền thống mà mở ra một cách tiếp cận mới, nơi cũ và mới cùng hiện diện trong đời sống. Qua infographic, sự khác biệt giữa hai thế hệ lồng đèn được nhìn nhận rõ hơn, từ đó cho thấy cách một món đồ quen thuộc đang chuyển mình theo thời gian.

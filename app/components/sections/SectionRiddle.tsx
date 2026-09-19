@@ -68,7 +68,8 @@ export function SectionRiddle() {
             fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
             color: '#FFF8E7',
             lineHeight: 1.85,
-            textAlign: 'left',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
             marginBottom: '16px',
           }}
         >
@@ -80,7 +81,8 @@ export function SectionRiddle() {
             fontSize: 'clamp(0.94rem, 1.8vw, 1.04rem)',
             color: 'rgba(255,248,231,0.92)',
             lineHeight: 1.85,
-            textAlign: 'left',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
             fontStyle: 'italic',
           }}
         >

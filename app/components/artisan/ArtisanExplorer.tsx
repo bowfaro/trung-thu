@@ -337,6 +337,7 @@ export function ArtisanExplorer() {
                     color: 'rgba(255,248,231,0.75)',
                     lineHeight: 1.8,
                     textAlign: 'justify',
+                    textJustify: 'inter-word',
                   }}
                 >
                   {activeData.description}

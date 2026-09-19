@@ -59,7 +59,8 @@ export function SectionEvolution() {
             fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
             color: '#FFF8E7',
             lineHeight: 1.85,
-            textAlign: 'left',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
           }}
         >
           Đèn lồng Trung thu ngày nay không còn bó hẹp trong những khuôn dáng quen thuộc của ký ức. Bên cạnh những chiếc <span className="keyword-gold">đèn ông sao, đèn kéo quân hay đèn giấy truyền thống</span>, nhiều mẫu đèn mới được sáng tạo với kiểu dáng đa dạng, màu sắc bắt mắt và hình thức phù hợp hơn với thị hiếu của người trẻ.
@@ -79,7 +80,8 @@ export function SectionEvolution() {
             fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
             color: '#FFF8E7',
             lineHeight: 1.85,
-            textAlign: 'left',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
           }}
         >
           Những hình ảnh quen thuộc như con vật, nhân vật hoạt hình hay họa tiết hiện đại cũng được đưa vào thiết kế, khiến chiếc đèn trở nên gần gũi hơn với trẻ em hôm nay:
@@ -121,7 +123,8 @@ export function SectionEvolution() {
             fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
             color: '#FFF8E7',
             lineHeight: 1.85,
-            textAlign: 'left',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
           }}
         >
           Dù khoác lên mình những hình dáng và chất liệu mới, những chiếc đèn ấy vẫn giữ lại tinh thần của mùa trăng — là ánh sáng, là niềm vui và là <span className="keyword-gold">ký ức Trung thu được truyền từ thế hệ này sang thế hệ khác</span>. Đèn lồng có thể đổi dáng, đổi màu, đổi chất liệu, nhưng ánh sáng của mùa trăng thì vẫn được thắp lên từ những ký ức quen thuộc.
@@ -214,7 +217,8 @@ export function SectionEvolution() {
             fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
             color: '#FFF8E7',
             lineHeight: 1.85,
-            textAlign: 'left',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
           }}
         >
           Mỗi mùa Trung thu đi qua, những chiếc đèn lồng lại mang một dáng hình mới. Sự thay đổi ấy không nhất thiết là câu chuyện của cũ và mới, càng không phải cuộc thay thế giữa truyền thống và hiện đại.
@@ -256,7 +260,8 @@ export function SectionEvolution() {
             fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
             color: '#FFF8E7',
             lineHeight: 1.85,
-            textAlign: 'left',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
             marginBottom: '20px',
           }}
         >
@@ -349,7 +354,8 @@ export function SectionEvolution() {
             fontSize: 'clamp(0.96rem, 1.8vw, 1.08rem)',
             color: '#FFF8E7',
             lineHeight: 1.85,
-            textAlign: 'left',
+            textAlign: 'justify',
+            textJustify: 'inter-word',
 
           }}
         >
